@@ -63,6 +63,7 @@ body {
 .site-logo-img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     margin-right: 16px;
 }
 
@@ -110,7 +111,7 @@ a {
     align-items: center;
 }
 
-.nav-item {
+.nav-link {
     cursor: pointer;
     color: #222;
     font-size: 14px;
@@ -121,15 +122,15 @@ a {
     transition: color 0.4s ease, opacity 0.4s ease;
 }
 
-.nav-item:hover {
+.nav-link:hover {
     color: #de2e54;
 }
 
-.nav-item:active {
+.nav-link:active {
     opacity: 0.6;
 }
 
-.nav-item:last-child {
+.nav-item-last .nav-link:last-child {
     margin-right: 0;
 }
 
@@ -330,10 +331,10 @@ a {
     color: #fff;
 }
 
-.footer-nav-item {
+.footer-nav-link {
     color: #fff;
 }
 
-.footer-nav-item:active {
+.footer-nav-link:active {
     color: #fff;
 }
