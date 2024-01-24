@@ -107,21 +107,28 @@ a {
     align-items: center;
 }
 
+.site-nav {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-link {
-    cursor: pointer;
-    color: #222;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.nav-item:not(:last-child) {
     margin-right: 32px;
+}
+
+.nav-link {
+    display: block;
+    color: #222;
     transition: color 0.4s ease, opacity 0.4s ease;
 }
 
@@ -131,10 +138,6 @@ a {
 
 .nav-link:active {
     opacity: 0.6;
-}
-
-.nav-item-last .nav-link:last-child {
-    margin-right: 0;
 }
 
 /* SITE-HERO */
