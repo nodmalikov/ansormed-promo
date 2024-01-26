@@ -31,7 +31,6 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
-    letter-spacing: 2px;
     text-transform: uppercase;
     padding: 12px 24px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -85,7 +84,6 @@ h1, h2, h3 {
 
 ul {
     padding: 0;
-    margin: 0;
 }
 
 li {
@@ -114,32 +112,28 @@ a {
 }
 
 .nav-item {
+    cursor: pointer;
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
     margin-right: 32px;
+    transition: color 0.4s ease, opacity 0.4s ease;
+}
+
+.nav-item:hover {
+    color: #de2e54;
+}
+
+.nav-item:active {
+    opacity: 0.6;
 }
 
 .nav-item:last-child {
     margin-right: 0;
 }
 
-.nav-link {
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    color: #222;
-    transition: color 0.4s ease, opacity 0.4s ease;
-}
-
-.nav-link:hover {
-    color: #de2e54;
-}
-
-.nav-link:active {
-    opacity: 0.6;
-}
 
 /* SITE-HERO */
 .hero {
@@ -335,10 +329,10 @@ a {
     color: #fff;
 }
 
-.footer-nav-link {
+.footer-nav-item {
     color: #fff;
 }
 
-.footer-nav-link:active {
+.footer-nav-item:active {
     color: #fff;
 }
