@@ -5,7 +5,7 @@
 
 *:focus {
     outline: 2px solid #de2e54;
-    outline-offset: 2px;
+    outline-offset: 5px;
 }
 
 html {
@@ -13,12 +13,27 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -30,6 +45,7 @@ body {
     margin-right: auto;
 }
 
+/* SITE-BUTTON */
 .site-button {
     color: #fff;
     font-size: 15px;
@@ -54,6 +70,7 @@ body {
     opacity: 0.6;
 }
 
+/* SITE-LOGO */
 .site-logo {
     display: flex;
     align-items: center;
@@ -82,22 +99,6 @@ body {
     color: #de2e54;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
 
 /* SITE-HEADER */
 .header {
@@ -110,33 +111,33 @@ a {
     align-items: center;
 }
 
-.nav-list {
+/* SITENAV */
+.sitenav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-item {
+.sitenav-item {
     cursor: pointer;
     color: #222;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
     text-transform: uppercase;
-    margin-right: 32px;
     transition: color 0.4s ease, opacity 0.4s ease;
 }
 
-.nav-item:hover {
+.sitenav-item:hover {
     color: #de2e54;
 }
 
-.nav-item:active {
+.sitenav-item:active {
     opacity: 0.6;
 }
 
-.nav-item:last-child {
-    margin-right: 0;
+.sitenav-item:not(:last-child) {
+    margin-right: 32px;
 }
 
 
@@ -199,6 +200,7 @@ a {
     margin-bottom: 36px;
 }
 
+
 /* SITE-SERVICE */
 .service {
     padding-top: 120px;
@@ -224,11 +226,10 @@ a {
     display: flex;
     align-items: center;
     width: 864px;
-    margin-bottom: 80px;
 }
 
-.service-card-item:last-child {
-    margin-bottom: 0;
+.service-card-item:not(:last-child) {
+    margin-bottom: 80px;
 }
 
 .service-text {
@@ -245,6 +246,7 @@ a {
     height: 200px;
     margin-right: 64px;
     border-radius: 24px;
+    object-fit: cover;
     box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
 }
 
@@ -261,6 +263,7 @@ a {
     color: #444;
     margin: 0;
 }
+
 
 /* SITE-REGISTRATION */
 .registration {
@@ -294,7 +297,6 @@ a {
     letter-spacing: 2px;
     border: 2px solid #fff;
     padding: 12px 24px;
-    margin-right: 40px;
     display: inline-block;
     border-radius: 8px;
     text-transform: uppercase;
@@ -310,9 +312,10 @@ a {
     opacity: 0.6;
 }
 
-.registration-button-item:last-child {
-    margin-right: 0;
+.registration-button-item:not(:last-child) {
+    margin-right: 40px;
 }
+
 
 /* SITE-FOOTER */
 .footer {
