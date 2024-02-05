@@ -200,6 +200,12 @@ a {
     margin-bottom: 36px;
 }
 
+.hero-img {
+    width: 423px;
+    height: 504px;
+    object-fit: cover;
+}
+
 
 /* SITE-SERVICE */
 .service {
