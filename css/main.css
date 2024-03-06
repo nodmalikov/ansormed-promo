@@ -1,3 +1,4 @@
+/* GENERAL-STYLE */
 :root {
     --component-color: #de2e54;
     --text-color: #222;
@@ -8,17 +9,9 @@
     --paragraph-font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* GENERAL-STYLE */
-* {
-    box-sizing: border-box;
-}
-
-*:focus {
-    outline: 2px dotted var(--component-color);
-    outline-offset: 5px;
-}
-
 html {
+    height: 100%;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -30,6 +23,11 @@ body {
     line-height: 1.5;
 }
 
+*:focus {
+    outline: 2px dashed var(--component-color);
+    outline-offset: 2px;
+}
+
 li {
     list-style: none;
 }
@@ -38,6 +36,7 @@ a {
     text-decoration: none;
 }
 
+/* CONTAINER */
 .container {
     width: 100%;
     max-width: 1150px;
@@ -162,23 +161,8 @@ a {
     width: 500px;
 }
 
-.hero-button {
-    color: var(--general-color);
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    font-family: var(--heading-font-family);
-    background-color: var(--component-color);
-    border-radius: 8px;
-    border: 2px solid var(--component-color);
-    display: inline-block;
-    transition: border-color 0.4s ease, background-color 0.4s ease, opacity 0.4s ease;
-}
-
 .hero-button:hover {
+    color: var(--general-color);
     border-color: rgba(222, 46, 84, 0.8);
     background-color: rgba(222, 46, 84, 0.8);
 }
@@ -348,10 +332,12 @@ a {
     align-items: center;
 }
 
-.footer-logo-text-color, .footer-nav-link  {
+.footer-logo-text-color,
+.footer-nav-link  {
     color: var(--general-color);
 }
 
-.footer-logo-text-color, .footer-nav-link:active {
+.footer-logo-text-color,
+.footer-nav-link:active {
     color: var(--general-color);
 }
