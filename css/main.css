@@ -26,6 +26,12 @@ body {
     color: var(--general-color);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 *:focus {
     outline: 2px dashed var(--component-color);
     outline-offset: 2px;
